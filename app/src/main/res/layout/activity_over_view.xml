@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OverViewActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_wax"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toothpaste "
+            android:textColor="@android:color/white"
+            app:chipBackgroundColor="@android:color/holo_red_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_spray"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toothbrush"
+            android:textColor="@android:color/white"
+            app:chipBackgroundColor="@android:color/holo_green_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_hair_care"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouthwash "
+            android:textColor="@android:color/white"
+            app:chipBackgroundColor="@android:color/holo_green_light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_body_care"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dental floss "
+            android:textColor="@android:color/white"
+            app:chipBackgroundColor="@android:color/holo_green_light" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/re_overview"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "346822030795",
+    "firebase_url": "https://testlogin-6cd3f.firebaseio.com",
+    "project_id": "testlogin-6cd3f",
+    "storage_bucket": "testlogin-6cd3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346822030795:android:44c2a5f60f390c0530724e",
+        "android_client_info": {
+          "package_name": "com.dat.fpt.bookingstaffapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346822030795-vj59kvt5meb331vt4q8n1hga1jfi3tle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dat.fpt.bookingstaffapp",
+            "certificate_hash": "f2f9f720b38190c1585cd3d4262ab5d46811ad1a"
+          }
+        },
+        {
+          "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9mj87PIqRhEzC5TgExlcN8Q5pQbG7jqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346822030795:android:e641a9a1926d25b330724e",
+        "android_client_info": {
+          "package_name": "com.dev.bookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346822030795-gmc8kqts5ndfhepqi7srpuk2oucagr8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.bookingapp",
+            "certificate_hash": "6e0671d6d78e3168636c33ea462fb0dbe6226773"
+          }
+        },
+        {
+          "client_id": "346822030795-favvenv72rq1ai7ocj0f85bnvq1tdags.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.bookingapp",
+            "certificate_hash": "54804a833a6b51cb46d7fa917208a329ae67866a"
+          }
+        },
+        {
+          "client_id": "346822030795-p2oot73isrinshtsfbjcvj478if5gmqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.bookingapp",
+            "certificate_hash": "5bc5bfc5363ee7b9fa40e57f0fe5edb15cd7c6ac"
+          }
+        },
+        {
+          "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9mj87PIqRhEzC5TgExlcN8Q5pQbG7jqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346822030795:android:7177627f3857fbac30724e",
+        "android_client_info": {
+          "package_name": "com.dev.staffapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346822030795-1hetfq95fqjdlrccbg99sfpe3tbjcvns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.staffapp",
+            "certificate_hash": "54804a833a6b51cb46d7fa917208a329ae67866a"
+          }
+        },
+        {
+          "client_id": "346822030795-35lmkgbnahnbdbkd5jenhg0b3nj3811i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.staffapp",
+            "certificate_hash": "5bc5bfc5363ee7b9fa40e57f0fe5edb15cd7c6ac"
+          }
+        },
+        {
+          "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9mj87PIqRhEzC5TgExlcN8Q5pQbG7jqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346822030795-4hbkb35clq9d2o2711r2l872v2cln4rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
