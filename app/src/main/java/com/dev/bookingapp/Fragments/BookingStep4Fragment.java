@@ -255,7 +255,7 @@ public class BookingStep4Fragment extends Fragment {
                                             MyNotification myNotification = new MyNotification();
                                             myNotification.setUid(UUID.randomUUID().toString());
                                             myNotification.setTitle("New Booking");
-                                            myNotification.setContent("You have new appointment for Customer hair care with " + Common.currentUser.getName());
+                                            myNotification.setContent("You have new appointment for Customer with " + Common.currentUser.getName());
                                             myNotification.setRead(false); //We will filter only notification with read = "false"
                                             myNotification.setServerTimestamp(FieldValue.serverTimestamp());
 
