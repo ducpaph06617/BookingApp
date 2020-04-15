@@ -52,6 +52,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "346822030795-ev1g4mv0ihttsgauukvvkun7sbi6fc41.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.bookingapp",
+            "certificate_hash": "f2f9f720b38190c1585cd3d4262ab5d46811ad1a"
+          }
+        },
+        {
           "client_id": "346822030795-gmc8kqts5ndfhepqi7srpuk2oucagr8a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -104,6 +112,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "346822030795-io474kf36ih7dld204lalcfg743r891l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.staffapp",
+            "certificate_hash": "6e0671d6d78e3168636c33ea462fb0dbe6226773"
+          }
+        },
         {
           "client_id": "346822030795-1hetfq95fqjdlrccbg99sfpe3tbjcvns.apps.googleusercontent.com",
           "client_type": 1,

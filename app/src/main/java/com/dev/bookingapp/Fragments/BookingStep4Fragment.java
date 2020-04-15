@@ -381,8 +381,8 @@ public class BookingStep4Fragment extends Fragment {
         String startEventTime = calendarDateFormat.format(startEvent.getTime());
         String endEventTime = calendarDateFormat.format(endEvent.getTime());
 
-        addToDeviceCalendar(startEventTime, endEventTime, "Haircut Booking",
-                new StringBuilder("Haircut from ")
+        addToDeviceCalendar(startEventTime, endEventTime, "Appointment",
+                new StringBuilder("Appointmentt from ")
                     .append(startTime)
                     .append(" with ")
                     .append(Common.currentBarber.getName())
