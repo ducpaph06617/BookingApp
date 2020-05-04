@@ -53,6 +53,8 @@ public class HomeActivity extends AppCompatActivity {
 
     AlertDialog dialog;
 
+    private FirebaseUser user;
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -80,10 +82,7 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-//        super.onSaveInstanceState(outState, outPersistentState);
-//    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,11 +102,11 @@ public class HomeActivity extends AppCompatActivity {
             {
                 dialog.show();
                 //Check if User Exists
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                user = FirebaseAuth.getInstance().getCurrentUser();
                 Log.d(TAG, "onCreate: " + user.getPhoneNumber());
 
                 //Save UserPhone by Paper
-                Paper.init(HomeActivity.this);
+                Paper.init(HomeActivity.this); // cái này để làm gì
                 Paper.book().write(Common.LOGGED_KEY, user.getPhoneNumber());
 
                 DocumentReference currentUser = userRef.document(user.getPhoneNumber());
@@ -120,7 +119,7 @@ public class HomeActivity extends AppCompatActivity {
                                     DocumentSnapshot userSnapShot = task.getResult();
                                     if(!userSnapShot.exists())
                                     {
-                                        showUpdateDialog(user.getPhoneNumber());
+                                        showUpdateDialog();
                                     }
                                     else
                                     {
@@ -128,20 +127,14 @@ public class HomeActivity extends AppCompatActivity {
                                         bottomNavigationView.setSelectedItemId(R.id.action_home);
                                     }
 
-
-
                                     if(dialog.isShowing())
                                         dialog.dismiss();
-
-
                                 }
                             }
                         });
             }
 
         }
-
-
 
 //View
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -171,10 +164,9 @@ public class HomeActivity extends AppCompatActivity {
         return false;
     }
 
-    private void showUpdateDialog(String phoneNumber) {
-
-
-
+    public void showUpdateDialog() {
+        if (user == null) return;
+        String phoneNumber = user.getPhoneNumber();
         bottomSheetDialog = new BottomSheetDialog(this);
         bottomSheetDialog.setTitle("One more Step");
         bottomSheetDialog.setCanceledOnTouchOutside(false);

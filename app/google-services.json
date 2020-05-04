@@ -113,6 +113,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "346822030795-mtfgtolalhrtigri4n4nhksoefcto966.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.staffapp",
+            "certificate_hash": "f2f9f720b38190c1585cd3d4262ab5d46811ad1a"
+          }
+        },
+        {
           "client_id": "346822030795-io474kf36ih7dld204lalcfg743r891l.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

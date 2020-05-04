@@ -9,4 +9,7 @@
     <string name="stylish_bullet">\u2022 Doctor:</string>
     <string name="bullet">\u2022 \u0020</string>
     <string name="ground">White Smiles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

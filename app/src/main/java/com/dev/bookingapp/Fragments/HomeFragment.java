@@ -11,6 +11,8 @@ import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,10 +24,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.dev.bookingapp.HomeActivity;
+import com.dev.bookingapp.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -78,6 +85,12 @@ import ss.com.bannerslider.Slider;
  */
 public class HomeFragment extends Fragment implements ILookbookLoadListener, IBannerLoadListener, IBookingInfoLoadListener, IBookingInformationChangeListener {
 
+    ImageView UpdateInfo;
+
+    BottomSheetDialog bottomSheetDialog;
+    CollectionReference userRef;
+    BottomNavigationView bottomNavigationView;
+
     private Unbinder unbinder;
 
     CartDataSource cartDataSource;
@@ -111,6 +124,14 @@ public class HomeFragment extends Fragment implements ILookbookLoadListener, IBa
     TextView txt_time_remain;
 
     @OnClick(R.id.layout_user_information)
+    void onUpdateInforDialog(){
+        if (getActivity() instanceof HomeActivity){
+            ((HomeActivity) getActivity()).showUpdateDialog();
+        }
+
+    }
+
+    @OnClick(R.id.layout_logout)
     void onLogOutDialog()
     {
         androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(getContext());
@@ -396,6 +417,7 @@ public class HomeFragment extends Fragment implements ILookbookLoadListener, IBa
         super.onCreate(savedInstanceState);
 
         dialog = new SpotsDialog.Builder().setContext(getContext()).setCancelable(false).build();
+
     }
 
     @Override
@@ -406,8 +428,7 @@ public class HomeFragment extends Fragment implements ILookbookLoadListener, IBa
         unbinder = ButterKnife.bind(this, view);
 
 
-
-        cartDataSource = new LocalCartDataSource(CartDatabase.getInstance(getContext()).cartDAO());
+                cartDataSource = new LocalCartDataSource(CartDatabase.getInstance(getContext()).cartDAO());
 
 
 
